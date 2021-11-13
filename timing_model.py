@@ -302,6 +302,7 @@ class TimingModel(object):
             logger.info((is_start))
             logger.info((zhouqi))
             task_times = 0
+            # 开启定时任务
             sql = """
                 INSERT INTO internal_app_gxdx.illegal_rule_group
                     (rule_name, timing, start_time, end_time, flag, time_params, task_name, task_times) 
